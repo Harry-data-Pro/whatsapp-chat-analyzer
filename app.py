@@ -10,7 +10,7 @@ from PIL import Image
 # starting
 st.header("Tutorial: How to Use This WhatsApp Chat Analyzer")
 image1 = Image.open("564c8d78-c00b-4ff6-93e8-c01fc487c26a.png")
-st.image(image1, caption="Step 1: Upload your chat export", use_column_width=True)
+st.image(image1, caption="You Get a Zip file after the download compelet unzip the file and upload the txt file only not the folder", use_column_width=True)
 
 #main work
 st.sidebar.title("WhatsApp Chat Analyzer")
@@ -113,4 +113,5 @@ if uploaded_file is not None:
                 fig.update_traces(textinfo='percent+label')  # Show percentages and emojis
                 st.plotly_chart(fig, use_container_width=True)
             else:
+
                 st.write("No emojis found to display.")
